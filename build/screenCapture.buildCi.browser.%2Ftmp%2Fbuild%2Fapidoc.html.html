@@ -1,0 +1,281 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/SassDoc/sass-convert">sass-convert (v0.5.2)</a>
+</h1>
+<h4>Node.js bindings to sass-convert</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sass-convert">module sass-convert</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sass-convert.sass-convert">
+            function <span class="apidocSignatureSpan"></span>sass-convert
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sass-convert.BinaryError">
+            function <span class="apidocSignatureSpan">sass-convert.</span>BinaryError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sass-convert.VersionError">
+            function <span class="apidocSignatureSpan">sass-convert.</span>VersionError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sass-convert.toString">
+            function <span class="apidocSignatureSpan">sass-convert.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sass-convert.BinaryError">module sass-convert.BinaryError</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sass-convert.BinaryError.BinaryError">
+            function <span class="apidocSignatureSpan">sass-convert.</span>BinaryError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sass-convert.VersionError">module sass-convert.VersionError</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sass-convert.VersionError.VersionError">
+            function <span class="apidocSignatureSpan">sass-convert.</span>VersionError
+            <span class="apidocSignatureSpan">(message)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.sass-convert.toString">module sass-convert.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sass-convert.toString.toString">
+            function <span class="apidocSignatureSpan">sass-convert.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sass-convert" id="apidoc.module.sass-convert">module sass-convert</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sass-convert.sass-convert" id="apidoc.element.sass-convert.sass-convert">
+        function <span class="apidocSignatureSpan"></span>sass-convert
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sass-convert = function (options) {
+  return new Converter(options).stream();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sass-convert.BinaryError" id="apidoc.element.sass-convert.BinaryError">
+        function <span class="apidocSignatureSpan">sass-convert.</span>BinaryError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BinaryError(message) {
+  _classCallCheck(this, BinaryError);
+
+  _get(Object.getPrototypeOf(BinaryError.prototype), 'constructor', this).call(this, message);
+  // http://bit.ly/1yMzARU
+  this.message = message || 'Could not find any executable for "' + BIN + '". Operation Aborted.';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sass-convert.VersionError" id="apidoc.element.sass-convert.VersionError">
+        function <span class="apidocSignatureSpan">sass-convert.</span>VersionError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function VersionError(message) {
+  _classCallCheck(this, VersionError);
+
+  _get(Object.getPrototypeOf(VersionError.prototype), 'constructor', this).call(this, message);
+  // http://bit.ly/1yMzARU
+  this.message = message || 'Invalid "' + BIN + '" version, must be ' + MINVERS;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.sass-convert.toString" id="apidoc.element.sass-convert.toString">
+        function <span class="apidocSignatureSpan">sass-convert.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sass-convert.BinaryError" id="apidoc.module.sass-convert.BinaryError">module sass-convert.BinaryError</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sass-convert.BinaryError.BinaryError" id="apidoc.element.sass-convert.BinaryError.BinaryError">
+        function <span class="apidocSignatureSpan">sass-convert.</span>BinaryError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BinaryError(message) {
+  _classCallCheck(this, BinaryError);
+
+  _get(Object.getPrototypeOf(BinaryError.prototype), 'constructor', this).call(this, message);
+  // http://bit.ly/1yMzARU
+  this.message = message || 'Could not find any executable for "' + BIN + '". Operation Aborted.';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sass-convert.VersionError" id="apidoc.module.sass-convert.VersionError">module sass-convert.VersionError</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sass-convert.VersionError.VersionError" id="apidoc.element.sass-convert.VersionError.VersionError">
+        function <span class="apidocSignatureSpan">sass-convert.</span>VersionError
+        <span class="apidocSignatureSpan">(message)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function VersionError(message) {
+  _classCallCheck(this, VersionError);
+
+  _get(Object.getPrototypeOf(VersionError.prototype), 'constructor', this).call(this, message);
+  // http://bit.ly/1yMzARU
+  this.message = message || 'Invalid "' + BIN + '" version, must be ' + MINVERS;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.sass-convert.toString" id="apidoc.module.sass-convert.toString">module sass-convert.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sass-convert.toString.toString" id="apidoc.element.sass-convert.toString.toString">
+        function <span class="apidocSignatureSpan">sass-convert.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
